@@ -9,6 +9,11 @@ function buttons() {
     ulElement.append(liElement);
     liElement.innerText = dog.name;
     liElement.className = "dogs-list__button";
+
+    // addEventListner
+    liElement.addEventListener("click", function () {
+      console.log(document.querySelector(".dogs-list__button").value);
+    });
   });
 }
 buttons();
